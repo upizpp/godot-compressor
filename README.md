@@ -16,3 +16,15 @@ func compress(to : String, compression_mode := 0) -> int:
 压缩open()方法打开的目录，将压缩后的文件保存至to，压缩算法为compression_mode（详见https://docs.godotengine.org/zh_CN/stable/classes/class_file.html#enum-file-compressionmode    ```CompressionMode```）
 
 
+
+# FolderDecompressor
+
+
+func open(path : String, password := "") -> bool:
+打开一个压缩文件，路径为path，密码为password，如果密码为""，则视为没有密码。
+
+func clear_password() -> void:
+清除密码
+
+func compress(to : String, compression_mode := 0) -> int:
+解压open()方法打开的文件，将解压后的文件保存至to，压缩算法为compression_mode（详见https://docs.godotengine.org/zh_CN/stable/classes/class_file.html#enum-file-compressionmode    ```CompressionMode```）
