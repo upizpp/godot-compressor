@@ -27,5 +27,5 @@ func open(path : String, password := "") -> bool:
 func clear_password() -> void:
 清除密码
 
-func compress(to : String, compression_mode := 0) -> int:
+func decompress(to : String, compression_mode := 0) -> int:
 解压open()方法打开的文件，将解压后的文件保存至to，压缩算法为compression_mode（详见https://docs.godotengine.org/zh_CN/stable/classes/class_file.html#enum-file-compressionmode    ```CompressionMode```）
